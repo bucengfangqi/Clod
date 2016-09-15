@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>	
+  <servlet>
+  <servlet-class>me.gacl.allServlet.JudgeUsersServlet</servlet-class>
+  <servlet-name>test5</servlet-name>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>test5</servlet-name>
+  <url-pattern>/servlet/judge</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-class>me.gacl.allServlet.RegistServlet</servlet-class>
+  <servlet-name>test6</servlet-name>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>test6</servlet-name>
+  <url-pattern>/servlet/regist</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-class>me.gacl.allServlet.UploadServlet</servlet-class>
+  <servlet-name>test</servlet-name>
+  </servlet>
+  <servlet>
+  <servlet-class>me.gacl.allServlet.ListFileServlet</servlet-class>
+  <servlet-name>test1</servlet-name>
+  </servlet>
+  <servlet>
+  <servlet-class>me.gacl.allServlet.DownloadServlet</servlet-class>
+  <servlet-name>test2</servlet-name>
+  </servlet>
+   <servlet>
+  <servlet-class>me.gacl.allServlet.DeleteServlet</servlet-class>
+  <servlet-name>test3</servlet-name>
+  </servlet>
+    <servlet>
+  <servlet-class>me.gacl.allServlet.DeleteAllFile</servlet-class>
+  <servlet-name>test4</servlet-name>
+  </servlet>
+  
+  
+  
+  <servlet-mapping>
+  <servlet-name>test</servlet-name>
+  <url-pattern>/servlet/upload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>test1</servlet-name>
+  <url-pattern>/servlet/listfileDownload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>test2</servlet-name>
+  <url-pattern>/servlet/Download</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>test3</servlet-name>
+  <url-pattern>/servlet/Delete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>test4</servlet-name>
+  <url-pattern>/servlet/DeleteAllFile</url-pattern>
+  </servlet-mapping>
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
